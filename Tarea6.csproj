@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Agregar.png" />
+    <None Remove="Resources\Borrar.png" />
+    <None Remove="Resources\Buscar.png" />
+    <None Remove="Resources\Guardar.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="DATA\" />
   </ItemGroup>
 
@@ -16,6 +23,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Agregar.png" />
+    <Resource Include="Resources\Borrar.png" />
+    <Resource Include="Resources\Buscar.png" />
+    <Resource Include="Resources\Guardar.png" />
   </ItemGroup>
 
   <ItemGroup>

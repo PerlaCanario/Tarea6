@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tarea6.UI.Registros"
         mc:Ignorable="d"
-        Title="rPersonas" Height="350" Width="400">
+        Title="rPersonas" Height="320" Width="400">
     <Grid>
         <StackPanel Orientation="Vertical" Margin="10,0,0,0">
             <StackPanel Orientation="Vertical">
@@ -22,16 +22,16 @@
                 </StackPanel>
 
                 <Label Content="Nombre"/>
-                <TextBox x:Name="NombreTextBox" Text="{Binding Nombre}" />
+                <TextBox x:Name="NombreTextBox" Text="{Binding Nombre}" Width="200" HorizontalAlignment="Left"/>
 
                 <Label Content="Telefono"/>
-                <TextBox x:Name="TelefonoTexBox" Text="{Binding Telefono}"/>
+                <TextBox x:Name="TelefonoTexBox" Text="{Binding Telefono}" Width="200" HorizontalAlignment="Left"/>
 
                 <Label Content="Cedula"/>
-                <TextBox x:Name="CedulaTexBox" Text="{Binding Cedula}" />
+                <TextBox x:Name="CedulaTexBox" Text="{Binding Cedula}" Width="200" HorizontalAlignment="Left"/>
 
                 <Label Content="Roles"/>
-                <ComboBox x:Name="RolesComboBox" SelectedValue="{Binding RolId}" />
+                <ComboBox x:Name="RolesComboBox" SelectedValue="{Binding RolId}" Width="200" HorizontalAlignment="Left" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,15">
@@ -43,5 +43,17 @@
                 </Button>
                 <Button x:Name="GuardarButton" Margin="5,0" Click="GuardarButton_Click">
                     <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/Guardar.png" Width="20"/>
+                        <Label Content="Guardar" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="EliminarButton" Margin="5,0" Click="EliminarButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/Borrar.png" />
+                        <Label Content="Eliminar" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
